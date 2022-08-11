@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+.section-one {
+  background-image: url(images/developer.png);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text-container {
+  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-left: 16px;
+}
+.lg-text {
+  font-size: 72px;
+  font-weight: 400;
+}
+.black-box {
+  background: #000;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+.black-box h2{
+  font-size: 50px;
+  font-weight: 300;
+}
+.black-box span {
+  font-size: 96px;
+}
+
+.middle-section {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+}
+.card {
+  height: 450px;
+  max-width: 320px;
+  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.2);
+  border-radius: 10px;
+  margin: 10px;
+  transition: 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.04);
+  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.4);
+  transition: 0.3s ease-in-out;
+}
+.card-image {
+}
+.card-image img {
+  width: 320px;
+  margin-bottom: 10px;
+}
+.card-image p, .card-image h3 {
+  padding: 5px 10px;
+}
+
+.bottom-section {
+  display: flex;
+}
+.contact-me {
+  padding: 50px;
+  background: #515603;
+  color: white;
+}
+.about-me {
+  padding: 50px;
+  background:  #722300;
+  color: white;
+}
+.about-me h2, .contact-me h2 {
+  font-size: 64px;
+  font-weight: 300;
+}
+
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 800px) {
+  .section-one {
+    min-height: 50vh;
+  }
+  .text-container {
+    text-align: center;
+    padding-top: 150px;
+  }
+  .lg-text {
+    font-size: 32px;
+  }
+  .black-box h2 {
+    font-size: 1em;
+  }
+  .black-box h2 span {
+    font-size: 2em;
+  }
+  .middle-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-section {
+    flex-direction: column;
+  }
+}
